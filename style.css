@@ -19,8 +19,8 @@ body {
 }
 
 .frame {
-  padding: 12px 18px 15px 22px;
-  width: 703px;
+  padding: 12px 18px 15px 21px;
+  width: 704px;
   height: 64px;
   background: var(--primary);
   border-radius: 10px;
@@ -33,8 +33,9 @@ body {
 }
 
 .progress_container {
-  width: 60px;
-  height: 60px;
+  top: 1px;
+  width: 62px;
+  height: 62px;
   position: relative;
   display: flex;
   align-items: center;
@@ -57,8 +58,8 @@ body {
   transform-origin: center;
   stroke-dasharray: calc(var(--pi) * 60px);
   stroke-dashoffset: calc(
-    (var(--pi) * 60px) - ((100 / var(--maxTasks) * var(--doneTasks) + 1) / 100) *
-      (var(--pi) * 60px)
+    (var(--pi) * 60px) - ((100 / var(--maxTasks) * var(--doneTasks)) / 100) *
+      (var(--pi) * 60px) - 3.5px
   );
 }
 
@@ -78,7 +79,7 @@ body {
 
 .info_container {
   width: 389px;
-  margin-left: 16px;
+  margin-left: 15px;
   margin-right: 68px;
   display: flex;
   justify-content: center;
